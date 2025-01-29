@@ -1,5 +1,22 @@
 # Changelog
 
+## [0.17.5](https://github.com/GoogleCloudPlatform/cloud-foundation-toolkit/compare/infra/blueprint-test/v0.17.4...infra/blueprint-test/v0.17.5) (2025-01-27)
+
+
+### Bug Fixes
+
+* **bpt-golden:** drop parallel for resource consumption ([#2826](https://github.com/GoogleCloudPlatform/cloud-foundation-toolkit/issues/2826)) ([e23c35e](https://github.com/GoogleCloudPlatform/cloud-foundation-toolkit/commit/e23c35e5e59777b350a9d9eba72f9d3b58cecb54))
+* **deps:** update module github.com/otiai10/copy to v1.14.1 ([#2791](https://github.com/GoogleCloudPlatform/cloud-foundation-toolkit/issues/2791)) ([0db58df](https://github.com/GoogleCloudPlatform/cloud-foundation-toolkit/commit/0db58df985c48644bcc9a783d4a63449b0806cce))
+* **deps:** update module sigs.k8s.io/kustomize/kyaml to v0.19.0 ([#2807](https://github.com/GoogleCloudPlatform/cloud-foundation-toolkit/issues/2807)) ([247e2a2](https://github.com/GoogleCloudPlatform/cloud-foundation-toolkit/commit/247e2a2c8970b2f1d97df6ddd357801531e444e8))
+
+## [0.17.4](https://github.com/GoogleCloudPlatform/cloud-foundation-toolkit/compare/infra/blueprint-test/v0.17.3...infra/blueprint-test/v0.17.4) (2025-01-02)
+
+
+### Bug Fixes
+
+* **deps:** update module github.com/gruntwork-io/terratest to v0.48.1 ([#2764](https://github.com/GoogleCloudPlatform/cloud-foundation-toolkit/issues/2764)) ([982c73e](https://github.com/GoogleCloudPlatform/cloud-foundation-toolkit/commit/982c73e9a357a84b2912e0b09b3d4f4cb17aae6a))
+* **deps:** Update module golang.org/x/net to v0.33.0 ([#2784](https://github.com/GoogleCloudPlatform/cloud-foundation-toolkit/issues/2784)) ([b2655aa](https://github.com/GoogleCloudPlatform/cloud-foundation-toolkit/commit/b2655aa9f00800808cf0b9612ccf7f35fbec49c8))
+
 ## [0.17.3](https://github.com/GoogleCloudPlatform/cloud-foundation-toolkit/compare/infra/blueprint-test/v0.17.2...infra/blueprint-test/v0.17.3) (2024-12-11)
 
 

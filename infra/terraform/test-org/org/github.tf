@@ -1,5 +1,5 @@
 /**
- * Copyright 2023 Google LLC
+ * Copyright 2023-2025 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,29 +16,11 @@
 provider "github" {}
 
 locals {
-  owners = distinct(
-    flatten(
-      [for repo, val in local.repos : [for owner in val.owners : lower(owner)] if try(val.owners != null, false)]
-    )
+  repo_members = flatten(
+    [for repo, val in local.repos : [for member in setunion(lookup(val, "admins", []), lookup(val, "maintainers", [])) : member]]
   )
 
-  org_members = setunion(
-    [for login in data.github_organization.tgm.users[*].login : lower(login)],
-    [for login in data.github_organization.gcp.users[*].login : lower(login)]
-  )
-
-  invalid_owners = setsubtract(local.owners, local.org_members)
-}
-
-variable "temp_allow_invalid_owners" {
-  type        = list(string)
-  description = "Googlers added as owners on TF blueprint repos but are not part of the GCP or TGM orgs yet."
-  default = [
-    "nidhi0710", # remove once heynidhi@ is added to GCP org
-    "sylvioneto",
-    "erictune",
-    "megelatim",
-  ]
+  org_members = [for login in setunion(data.github_organization.tgm.users[*].login, data.github_organization.gcp.users[*].login) : login]
 }
 
 data "github_organization" "tgm" {

@@ -1,5 +1,19 @@
 # Changelog
 
+## [0.2.8](https://github.com/GoogleCloudPlatform/cloud-foundation-toolkit/compare/tflint-ruleset-blueprint/v0.2.7...tflint-ruleset-blueprint/v0.2.8) (2025-01-23)
+
+
+### Bug Fixes
+
+* **deps:** update module github.com/terraform-linters/tflint-plugin-sdk to v0.22.0 ([#2802](https://github.com/GoogleCloudPlatform/cloud-foundation-toolkit/issues/2802)) ([67d7b8b](https://github.com/GoogleCloudPlatform/cloud-foundation-toolkit/commit/67d7b8be8c6647ba62017248b4f3ad958fb0e5e0))
+
+## [0.2.7](https://github.com/GoogleCloudPlatform/cloud-foundation-toolkit/compare/tflint-ruleset-blueprint/v0.2.6...tflint-ruleset-blueprint/v0.2.7) (2025-01-03)
+
+
+### Bug Fixes
+
+* **deps:** Update module golang.org/x/net to v0.33.0 ([#2784](https://github.com/GoogleCloudPlatform/cloud-foundation-toolkit/issues/2784)) ([b2655aa](https://github.com/GoogleCloudPlatform/cloud-foundation-toolkit/commit/b2655aa9f00800808cf0b9612ccf7f35fbec49c8))
+
 ## [0.2.6](https://github.com/GoogleCloudPlatform/cloud-foundation-toolkit/compare/tflint-ruleset-blueprint/v0.2.5...tflint-ruleset-blueprint/v0.2.6) (2024-12-05)
 
 
